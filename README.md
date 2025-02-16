@@ -36,9 +36,9 @@ node server.js
 
 The API Gateway forwards requests to the following microservices:
 
-- **ms_auth**: `http://127.0.0.1:8001/api/auth`
-- **ms_test**: `http://127.0.0.1:8002/api/test`
-- **ms_assess**: `http://127.0.0.1:8003/api/assess`
+- **ms_auth**: `https://auth.smarteval.tech/api/auth`
+- **ms_test**: `https://test.smarteval.tech/api/test`
+- **ms_assess**: `https://assess.smarteval.tech/api/assess`
 
 
 ## Middleware
