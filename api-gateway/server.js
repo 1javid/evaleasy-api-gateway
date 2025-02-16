@@ -23,7 +23,7 @@ app.use(
     '/api/auth',
     preserveOriginalUrl,
     createProxyMiddleware({
-        target: 'http://127.0.0.1:8001',
+        target: 'auth.smarteval.tech',
         changeOrigin: true,
     })
 );
@@ -33,7 +33,7 @@ app.use(
     '/api/test',
     preserveOriginalUrl,
     createProxyMiddleware({
-        target: 'http://127.0.0.1:8002',
+        target: 'test.smarteval.tech',
         changeOrigin: true,
     })
 );
@@ -43,7 +43,7 @@ app.use(
     '/api/assess',
     preserveOriginalUrl,
     createProxyMiddleware({
-        target: 'http://127.0.0.1:8003',
+        target: 'assess.smarteval.tech',
         changeOrigin: true,
     })
 );
