@@ -39,7 +39,7 @@ The API Gateway forwards requests to the following microservices:
 - **ms_auth**: `https://auth.smarteval.tech/api/auth`
 - **ms_test**: `https://test.smarteval.tech/api/test`
 - **ms_assess**: `https://assess.smarteval.tech/api/assess`
-
+- **ms_omr**: `https://omr.smarteval.tech/api/omr`
 
 ## Middleware
 

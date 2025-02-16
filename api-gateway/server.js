@@ -48,6 +48,16 @@ app.use(
     })
 );
 
+// Proxy configuration for ms_assess: Preserve /api/omr prefix.
+app.use(
+    '/api/omr',
+    preserveOriginalUrl,
+    createProxyMiddleware({
+        target: 'https://omr.smarteval.tech',
+        changeOrigin: true,
+    })
+);
+
 // Optionally, add a default route
 app.get('/', (req, res) => {
     res.send('API Gateway is running.');
