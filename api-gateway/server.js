@@ -48,12 +48,22 @@ app.use(
     })
 );
 
-// Proxy configuration for ms_assess: Preserve /api/omr prefix.
+// Proxy configuration for ms_omr: Preserve /api/omr prefix.
 app.use(
     '/api/omr',
     preserveOriginalUrl,
     createProxyMiddleware({
         target: 'https://omr.smarteval.tech',
+        changeOrigin: true,
+    })
+);
+
+// Proxy configuration for ms_ai: Preserve /api/ai prefix.
+app.use(
+    '/api/ai',
+    preserveOriginalUrl,
+    createProxyMiddleware({
+        target: 'https://ai.smarteval.tech',
         changeOrigin: true,
     })
 );
